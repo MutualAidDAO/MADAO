@@ -6,4 +6,5 @@ body{
     background-color: rgb(94, 128, 84);
     text-align: center;
     image-rendering: auto;
+   float:right url(images\RainbowBG.png);
 }
