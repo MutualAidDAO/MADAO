@@ -3,8 +3,6 @@ body{
     font-size: 26;
     font-style: oblique;
     margin:4.2069%;
-    background-color: rgb(94, 128, 84);
     text-align: center;
-    image-rendering: auto;
-  z-index: auto; float:right inline-end url(images\RainbowBG.png);
-}
+    background-color: olivedrab;
+    }
