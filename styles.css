@@ -1,7 +1,8 @@
 body{
-    font-size: medium;
+    font-size: x-large;
+    font-style: oblique;
     margin:4.2069%;
-    background-color: rgb(73, 95, 35);
+    background-color: rgb(94, 128, 84);
     text-align: center;
     image-rendering: auto;
 }
