@@ -1,5 +1,5 @@
  .dropdown {
-        display: inline-flexbox;
+        display: -moz-inline-stack;
         color: olivedrab, orchid;
         width: 145px;
         position: right;
