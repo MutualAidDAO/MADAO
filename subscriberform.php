@@ -8,7 +8,7 @@ mail("MutualAidDAO@gmail.com", "New User from Site",
 
 
 
-$_POST["insert your message here"]. "From: email");
+$_POST["insert your message here"], "From: $_post [em]");
 
 
 }
