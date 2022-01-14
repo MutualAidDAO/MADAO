@@ -22,11 +22,11 @@
       });
   
       var formData = {};
-      fields.forEach(function(name){
-        var element = elements[name];
+      fields.forEach(function(email){
+        var element = elements[email];
         
         // singular form elements just have one value
-        formData[name] = element.value;
+        formData[email] = element.value;
   
         // when our element has multiple items, get their values
         if (element.length) {
@@ -37,13 +37,13 @@
               data.push(item.value);
             }
           }
-          formData[name] = data.join(', ');
+          formData[email] = data.join(', ');
         }
       });
   
       // add form-specific values into the data
       formData.formDataNameOrder = JSON.stringify(fields);
-      formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
+      formData.formGoogleSheetName = form.dataset.sheet || "New Signups"; // default sheet name
       formData.formGoogleSendEmail
         = form.dataset.email || ""; // no email by default
   
