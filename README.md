@@ -10,3 +10,7 @@ Know that Our community is bound by this Code. Quite Literally. Decentralized Au
 Jan 9; DownTime Branch is for shutting down the mint engine. Website base in complete, Link preview and Favicon are WIP.
 
 Jan 12; link preview test1=fail, test2=success, working on blog, drop down menu, and content links atm
+
+March-site CSS with PURE
+
+april- JS learning/Plutus Testnet Dev
