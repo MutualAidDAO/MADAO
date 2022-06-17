@@ -13,7 +13,7 @@
 
 h1,
 h2,
-h3{color: #0e1eafe8;
+h3{color: #777;
 
 }
 h4,
@@ -39,14 +39,18 @@ label {
   padding: 2em;
   border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-
+.button-xlarge{
+  font-size: 200%;
+}
 .is-center {
   text-align: center;
 }
 
 /* Might be a menu fix
 */
-
+header{
+  display: block;
+}
 .home-menu {
   padding: 0.5em;
   text-align: center;
@@ -54,12 +58,7 @@ label {
   position: right;
 }
 
-.pure-menu.pure-menu-fixed {
-  /* Fixed menus normally have a border at the bottom. */
-  border-bottom: none;
-  /* I need a higher z-index here because of the scroll-over effect. */
-  z-index: 4;
-}
+
 
 .home-menu .pure-menu-heading {
   color: white;
@@ -87,8 +86,8 @@ label {
  */
  .pure-button {
   background-color: #5f0653;
-  color: white;
-  padding: 0.5em 2em;
+ 
+  
   border-radius: 5px;
 }
 
@@ -100,123 +99,15 @@ a.pure-button-primary {
 }
 
 
-/*
-* -- PURE FORM STYLES --
-* Style the form inputs and labels
-*/
-.pure-form label {
-  margin: 1em 0 0;
-  font-weight: bold;
-  font-size: 100%;
-}
-
-.pure-form input[type] {
-  border: 2px solid #ddd;
-  box-shadow: none;
-  font-size: 100%;
-  width: 100%;
-
-}
-
 
 button{
   background-color: #5f0653;
   
 }
 
-/*
- * -- SPLASH STYLES --
- * This is the blue top section that appears on the page.
- */
+#splashimg{
+object-fit: fill;
 
- .splash-container {
-  z-index: 1;
-  overflow: hidden;
-  /* The following styles are required for the "scroll-over" effect */
-  width: 100%;
-  height: 88%;
-  top: 0;
-  left: 0;
-  position: fixed !important;
-}
-
-.splash {
-  /* absolute center .splash within .splash-container */
-  width: 80%;
-  height: 50%;
-  margin: auto;
-  position: absolute;
-  top: 100px; left: 0; bottom: 0; right: 0;
-  text-align: center;
-  text-transform: uppercase;
-  
-}
-
-/* This is the main heading that appears on the blue section */
-.splash-head {
-  font-size:1.7em;
-  font-weight: bold;
-  color: #221fbbbe;
-  border: 3px solid white;
-  padding: 1em 1.6em;
-  font-weight: 100;
-  border-radius: 5px;
-  line-height: 1em;
-}
-
-/* This is the subheading that appears on the blue section */
-.splash-subhead {
-  color: #1613d3b6;
-  letter-spacing: 0.05em;
-  opacity: 0.8;
-}
-
-/*
-* -- CONTENT STYLES --
-* This represents the content area (everything below the blue section)
-*/
-.content-wrapper {
-  /* These styles are required for the "scroll-over" effect */
-  position: absolute;
-  top: 87%;
-  width: 100%;
-  min-height: 12%;
-  z-index: 2;
-
-}
-
-/* We want to give the content area some more padding */
-.content {
-  padding: 1em 1em 1em;
-        background-color:orchid;
-       
-}
-
-/* This is the class used for the main content headers (<h2>) */
-.content-head {
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin: 2em 0 1em 0;
-}
-
-/* This is a modifier class used when the content-head is inside a ribbon */
-.content-head-ribbon {
-  color: rgba(190, 152, 29, 0.925);
-}
-
-/* This is the class used for the content sub-headers (<h3>) */
-.content-subhead {
-  color: #1f2bd6d0;
-}
-  .content-subhead i {
-      margin-right: 7px;
-  }
-
-/* This is the class used for the dark-background areas. */
-.ribbon {
-  background:darkorchid;
-  color: #aaa;
 }
 body {
   line-height: 1.5em;
@@ -228,43 +119,96 @@ body {
   margin:4.2069%;
   text-align: center;
   background-blend-mode: color-burn;
-  background: rgb(66, 146, 29);
+  background: #9FEFA6;
   margin: 0;
 }
 #infobox{
   padding: 0 0 0 0em;
 }
-.dropdown {
-  display: -moz-inline-stack;
-  background: olivedrab, orchid;
-  width: 145px;
-  position: right;
-  float: right;
-  
-}
-.pure-menu:hover .dropdown-content {
+
+.pure-menu:hover  {
   display: inline-block;
 }
-.dropdown-content {
+
+
+.custom-brand{
+  text-decoration: #777;
+}
+.custom-wrapper {
+  background-color: #9FEFA6;
+  margin-bottom: 1em;
+  -webkit-font-smoothing: antialiased;
+  height: 2.5em;
+  overflow: hidden;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.custom-wrapper.open {
+  height: 14em;
+}
+
+.custom-menu-3 {
+  text-align: right;
+}
+
+.custom-toggle {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 0;
+  right: 0;
   display: none;
-  position: right;
-  width: 145px;
-  overflow: auto;
-  box-shadow: 0px 10px 10px 0px rgba(16, 8, 59, 0.548);
-  color: olivedrab, orchid;
 }
-.dropdown:hover .dropdown-content {
-  display: inline-block;
-}
-.dropdown-content a {
+
+.custom-toggle .bar {
+  background-color: #777;
   display: block;
-  color: #000000;
-  padding: 5px;
-  text-decoration: none;
+  width: 20px;
+  height: 2px;
+  border-radius: 100px;
+  position: absolute;
+  top: 18px;
+  right: 7px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
 }
-.dropdown-content a:hover {
-  color: #23b679;
-  background-color: #5f0653;
+
+.custom-toggle .bar:first-child {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 47.999em) {
+
+  .custom-menu-3 {
+      text-align: left;
+  }
+
+  .custom-toggle {
+      display: block;
+  }
+
 }
 
 /*
@@ -288,29 +232,7 @@ body {
           float: right;
       }
 
-  /* We increase the height of the splash-container */
-/*    .splash-container {
-      height: 500px;
-  }*/
 
-  /* We decrease the width of the .splash, since we have more width
-  to work with */
-  .splash {
-      width: 50%;
-      height: 50%;
-  }
-
-  .splash-head {
-      font-size: 250%;
-  }
-
-
-  /* We remove the border-separator assigned to .l-box-lrg */
-  .l-box-lrg {
-      border: none;
-  }
-
-}
 
 /*
 * -- DESKTOP (AND UP) MEDIA QUERIES --
@@ -319,6 +241,6 @@ body {
 */
 @media (min-width: 78em) {
   /* We increase the header font size even more */
-  .splash-head {
+  .button-xlarge {
       font-size: 300%;
-  }}
+  }}}
