@@ -98,7 +98,10 @@ a.pure-button-primary {
   font-size: 120%;
 }
 
-
+p{
+  font-size: large;
+  text-decoration: #777;
+}
 
 button{
   background-color: #5f0653;
@@ -133,6 +136,7 @@ body {
 
 .custom-brand{
   text-decoration: #777;
+  font-size: larger;
 }
 .custom-wrapper {
   background-color: #9FEFA6;
