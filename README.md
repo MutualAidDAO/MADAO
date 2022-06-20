@@ -14,3 +14,5 @@ Jan 12; link preview test1=fail, test2=success, working on blog, drop down menu,
 March-site CSS with PURE
 
 april- JS learning/Plutus Testnet Dev
+
+6/19/2022- Site OVERHAUL fixed and made so much new stuff
