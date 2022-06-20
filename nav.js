@@ -1,5 +1,5 @@
 (function (window, document) {
-    const menu = document.getElementById('menu'),
+    let menu = document.getElementById('menu'),
         rollback,
         WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
     
@@ -44,4 +44,3 @@
     
     window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
     })(this, this.document);
-    
