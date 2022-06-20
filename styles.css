@@ -215,6 +215,11 @@ body {
   }
 
 }
+@media (max-width: 30em){
+  #hometag{
+    max-width: 80%;
+  }
+}
 
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
