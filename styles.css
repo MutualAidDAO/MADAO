@@ -58,7 +58,9 @@ header{
   position: right;
 }
 
-
+.pure-button{
+  max-height: 2em;
+}
 
 .home-menu .pure-menu-heading {
   color: white;
