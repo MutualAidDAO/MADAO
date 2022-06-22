@@ -86,7 +86,10 @@ header{
   border: none;
   color: #AECFE5;
 }
-
+#highflower{
+  max-width: 80%;
+  align-content: left;
+}
 /*
  * -- PURE BUTTON STYLES --
  * I want my pure-button elements to look a little different
