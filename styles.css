@@ -22,7 +22,9 @@ h6,
 label {
   color: #34495e;
 }
-
+Article{
+  font-size: x-large;
+}
 .pure-img-responsive {
   max-width: 100%;
   height: auto;
@@ -41,6 +43,9 @@ label {
 }
 .button-xlarge{
   font-size: 200%;
+}
+li{
+  font-size: larger;
 }
 .is-center {
   text-align: center;
