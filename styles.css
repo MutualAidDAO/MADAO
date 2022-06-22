@@ -89,6 +89,8 @@ header{
 #highflower{
   max-width: 80%;
   align-content: left;
+  content: fill;
+  max-height: 40em;
 }
 /*
  * -- PURE BUTTON STYLES --
