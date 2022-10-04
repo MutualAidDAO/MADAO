@@ -220,6 +220,7 @@ input {
   }
   #logo {
     transform: translateX(0.25em);
+    margin: 0;
   }
   #topD {
     margin-right: 2em;
