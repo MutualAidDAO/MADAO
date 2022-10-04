@@ -1,4 +1,3 @@
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -10,263 +9,240 @@
 * Most of these are inherited from Base, but I want to change a few.
 */
 
-
+a {
+  text-decoration: none;
+  color: #000000;
+}
 h1,
 h2,
-h3{color: #777;
-
+h3 {
+  color: rgb(0, 0, 0);
+  line-height: 1em;
+  
 }
 h4,
 h5,
 h6,
 label {
-  color: #34495e;
+  color: #000000;
+  line-height: 1em;
 }
-Article{
-  font-size: x-large;
+#titlepad{
+  padding: 0.3em;
+  font-size: 45;
+  padding-left: 1.7em;
 }
 .pure-img-responsive {
-  max-width: 100%;
+  max-width: 100vw;
   height: auto;
+  
 }
-/*
- * -- LAYOUT STYLES --
- * These are some useful classes which I will need
- */
- .l-box {
+.greyblock{
+  background-color: slategrey;
+  border-radius: 2em;
+}
+header {
+  display: flex;
+  justify-content: space-between;
   padding: 1em;
 }
-
-.l-box-lrg {
+#title {
+  font-size: 45;
+  text-decoration: none;
   padding: 2em;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 0;
 }
-.button-xlarge{
-  font-size: 200%;
-}
-li{
-  font-size: larger;
-}
-.is-center {
-  text-align: center;
+#size img {
+  max-width: 34vw;
+  min-width: 34vw;
 }
 
-/* Might be a menu fix
-*/
-header{
-  display: block;
+#logo {
+  max-height: 4.2em;
+  align-self: flex-start;
+  margin: 0.5em;
+  transform: translateX(-1em);
+  font-size: 35;
+  line-height: 1em;
 }
-.home-menu {
+.MADAO {
+  padding-top: 1.5em;
+}
+.Secpad {
+  padding: 4em;
+}
+figure img {
   padding: 0.5em;
-  text-align: center;
-  
-  position: right;
 }
 
-.pure-button{
-  max-height: 2em;
+article {
+  padding: 12vw;
+  font-size: x-large;
 }
-
-.home-menu .pure-menu-heading {
-  color: white;
-  font-weight: 400;
-  font-size: 120%;
+#flexthis {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
-
-.home-menu .pure-menu-selected a {
-  color: white;
+#Bquote {
+  padding: 15%;
 }
-
-.home-menu a {
-  color: #6FBEF3;
+#topline {
+  border-top: solid grey 2px;
+  padding-top: 0.5em;
 }
-.home-menu li a:hover,
-.home-menu li a:focus {
-  background: none;
-  border: none;
-  color: #AECFE5;
+ul {
+  line-height: 1.5em;
 }
-#highflower{
-  max-width: 80%;
-  align-content: left;
-  content: fill;
-  max-height: 40em;
+#Uline:hover {
+  text-decoration: underline;
 }
-#BugBanner{
-  max-width: 75%;
-  max-height: 12em;
-  margin-top: 4em;
-  margin-bottom: 4em;
+#topD {
+  justify-self: flex-end;
+  border-radius: 50%;
+  max-height: 5em;
+  margin-top: 3em;
 }
-/*
- * -- PURE BUTTON STYLES --
- * I want my pure-button elements to look a little different
- */
- .pure-button {
-  background-color: #473444;
- 
-  
-  border-radius: 5px;
+#flexbase {
+  display: flex;
+  justify-content: baseline;
 }
-
-a.pure-button-primary {
-  background: #5f0653;
-  color: #1f8dd6;
-  border-radius: 5px;
-  font-size: 120%;
+figcaption {
+  font-size: xx-large;
+  line-height: 1em;
 }
-
-p{
-  font-size: large;
-  text-decoration: #777;
+p,
+pre {
+  font-size: x-large;
 }
-
-button{
-  background-color: #5f0653;
-  
-}
-
-#splashimg{
-object-fit: fill;
-
+#faq {
+  line-height: 1.5em;
+  padding: 0.25em;
 }
 body {
   line-height: 1.5em;
-  color: #146629;
-  font-size: 26;
+  color: rgb(0, 0, 0);
   font-weight: bold;
-  text-decoration: dimgrey;
-  margin:4.2069%;
-  text-align: center;
-  background-blend-mode: color-burn;
-  background: #9FEFA6;
-  margin: 0;
-}
-#infobox{
-  padding: 0 0 0 0em;
-}
 
-.pure-menu:hover  {
-  display: inline-block;
+  font-family: "EB Garamond", serif;
+
+  text-align: left;
+
+  background: whitesmoke;
 }
-
-
-.custom-brand{
-  text-decoration: #777;
+#grey {
+  background-color: rgb(172, 169, 169);
+  padding: 1.5em;
   font-size: larger;
 }
-.custom-wrapper {
-  background-color: #9FEFA6;
-  margin-bottom: 1em;
-  -webkit-font-smoothing: antialiased;
-  height: 2.5em;
-  overflow: hidden;
-  -webkit-transition: height 0.5s;
-  -moz-transition: height 0.5s;
-  -ms-transition: height 0.5s;
-  transition: height 0.5s;
+.btn {
+  padding: 1em;
+  margin: 1.5em;
+  background-color: #9fefa6;
+  border-radius: 14px;
+  font-weight: bolder;
 }
-
-.custom-wrapper.open {
-  height: 14em;
+.btn:hover,
+.btn:active {
+  background-color: #473544;
+  color: whitesmoke;
 }
-
-.custom-menu-3 {
-  text-align: right;
+#flexcenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.custom-toggle {
-  width: 34px;
-  height: 34px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: none;
+#alignend {
+  align-self: flex-end;
 }
-
-.custom-toggle .bar {
-  background-color: #777;
-  display: block;
-  width: 20px;
-  height: 2px;
-  border-radius: 100px;
-  position: absolute;
-  top: 18px;
-  right: 7px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  transition: all 0.5s;
+blockquote {
+  font-size: xx-large;
+  line-height: 1.5em;
 }
-
-.custom-toggle .bar:first-child {
-  -webkit-transform: translateY(-6px);
-  -moz-transform: translateY(-6px);
-  -ms-transform: translateY(-6px);
-  transform: translateY(-6px);
+.formtime {
+  display: flex;
+  
 }
-
-.custom-toggle.x .bar {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+.col{
+  flex-direction: column;
 }
+.paddingleft {
+ padding-left: 8vw;
 
-.custom-toggle.x .bar:first-child {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
 }
-
-@media (max-width: 47.999em) {
-
-  .custom-menu-3 {
-      text-align: left;
+.formbox {
+  display: flex;
+ 
+  flex-wrap: wrap;
+  max-width: 35vw;
+ padding-left: 2em;
+}
+input[type=radio] {
+  border: 0px;
+  width: 100%;
+  height: 4em;
+}
+input{
+  width: 500px;
+}
+.formside {
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 5vw;
+}
+input {
+  margin: 1em;
+  padding: 00.5em;
+}
+#width {
+  width: 100vw;
+}
+@media screen and (max-width: 1300px) {
+  #zero {
+    margin: 0;
+    padding: 0;
   }
-
-  .custom-toggle {
-      display: block;
+  #Bquote {
+    padding: 0;
   }
-
+  #size img {
+    max-width: 80vw;
+    min-width: 80vw;
+  }
+  header {
+    justify-content: space-around;
+  }
+  #logo {
+    transform: translateX(0.25em);
+  }
+  #topD {
+    margin-right: 2em;
+  }
+  #title {
+    padding: 0.5em;
+    margin: 0;
+  }
+  figcaption {
+    max-width: 95%;
+  }
+  blockquote {
+    font-size: x-large;
+  }
+  #flexbase {
+    flex-wrap: wrap;
+  }
+  .formbox {
+    margin-left: 2em;
+    max-width: 90vw;
+    min-width: 90vw;
+  }
+  #smallbar {
+    max-width: 60vw;
+    min-width: 60vw;
+  }
+  #followalong{
+    min-width: 70vw;
+    max-width: 70vw;
+  }
 }
-@media (max-width: 30em){
-  #hometag{
-    max-width: 80%;
-  }
-}
-
-/*
- * -- TABLET (AND UP) MEDIA QUERIES --
- * On tablets and other medium-sized devices, we want to customize some
- * of the mobile styles.
- */
- @media (min-width: 48em) {
-
-  /* We increase the body font size */
-  body {
-      font-size: 16px;
-  }
-
-  /* We can align the menu header to the left, but float the
-  menu items to the right. */
-  .home-menu {
-      text-align: left;
-  }
-      .home-menu ul {
-          float: right;
-      }
-
-
-
-/*
-* -- DESKTOP (AND UP) MEDIA QUERIES --
-* On desktops and other large devices, we want to over-ride some
-* of the mobile and tablet styles.
-*/
-@media (min-width: 78em) {
-  /* We increase the header font size even more */
-  .button-xlarge {
-      font-size: 300%;
-  }}}

@@ -1,0 +1,213 @@
+/*
+ * -- LAYOUT STYLES --
+ * These are some useful classes which I will need
+ */
+.l-box {
+  padding: 1em;
+}
+.pure-img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+.l-box-lrg {
+  padding: 2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.button-xlarge {
+  font-size: 200%;
+}
+li {
+  font-size: larger;
+}
+.is-center {
+  text-align: center;
+}
+
+/* Might be a menu fix
+  */
+#BugBanner {
+  max-width: 75%;
+  max-height: 12em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+/*
+   * -- PURE BUTTON STYLES --
+   * I want my pure-button elements to look a little different
+   */
+.pure-button {
+  background-color: #473444;
+
+  border-radius: 5px;
+}
+
+a.pure-button-primary {
+  background: #5f0653;
+  color: #1f8dd6;
+  border-radius: 5px;
+  font-size: 120%;
+}
+button {
+  background-color: #5f0653;
+}
+#highflower {
+  margin: auto;
+}
+p {
+  font-size: large;
+  text-decoration: #777;
+}
+.home-menu {
+  padding: 0.5em;
+  text-align: center;
+
+  position: right;
+}
+
+.pure-button {
+  max-height: 2em;
+}
+
+.home-menu .pure-menu-heading {
+  color: white;
+  font-weight: 400;
+  font-size: 120%;
+}
+
+.home-menu .pure-menu-selected a {
+  color: white;
+}
+
+.home-menu a {
+  color: #6fbef3;
+}
+.home-menu li a:hover,
+.home-menu li a:focus {
+  background: none;
+  border: none;
+  color: #aecfe5;
+}
+.pure-menu:hover {
+  display: inline-block;
+}
+
+.custom-brand {
+  text-decoration: #777;
+  font-size: larger;
+}
+.custom-wrapper {
+  background-color: #9fefa6;
+  margin-bottom: 1em;
+  -webkit-font-smoothing: antialiased;
+  height: 2.5em;
+  overflow: hidden;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.custom-wrapper.open {
+  height: 18em;
+}
+
+.custom-menu-3 {
+  text-align: right;
+}
+
+.custom-toggle {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.custom-toggle .bar {
+  background-color: #777;
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 100px;
+  position: absolute;
+  top: 18px;
+  right: 7px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
+.custom-toggle.x .bar {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#infobox {
+  padding: 0 0 0 0em;
+}
+@media (max-width: 47.999em) {
+  .custom-menu-3 {
+    text-align: left;
+  }
+
+  .custom-toggle {
+    display: block;
+  }
+}
+@media (max-width: 20em) {
+  #hometag {
+    max-width: 80%;
+  }
+}
+#splashimg {
+  object-fit: fill;
+}
+/*
+   * -- TABLET (AND UP) MEDIA QUERIES --
+   * On tablets and other medium-sized devices, we want to customize some
+   * of the mobile styles.
+   */
+@media (min-width: 48em) {
+  /* We increase the body font size */
+  body {
+    font-size: 16px;
+  }
+
+  /* We can align the menu header to the left, but float the
+    menu items to the right. */
+  .home-menu {
+    text-align: left;
+  }
+  .home-menu ul {
+    float: right;
+  }
+
+  /*
+  * -- DESKTOP (AND UP) MEDIA QUERIES --
+  * On desktops and other large devices, we want to over-ride some
+  * of the mobile and tablet styles.
+  */
+  @media (min-width: 78em) {
+    /* We increase the header font size even more */
+    .button-xlarge {
+      font-size: 300%;
+    }
+  }
+}
