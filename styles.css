@@ -80,6 +80,10 @@ figure img {
 article {
   padding: 12vw;
   font-size: x-large;
+  font-weight: 500;
+}
+article h1 {
+  font-weight: 500;
 }
 #flexthis {
   display: flex;
@@ -116,6 +120,8 @@ figcaption {
 p,
 pre {
   font-size: x-large;
+  line-height: 2em;
+  
 }
 #faq {
   line-height: 1.5em;
