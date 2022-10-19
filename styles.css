@@ -155,6 +155,11 @@ body {
   background-color: #473544;
   color: whitesmoke;
 }
+#bttn {
+ font-size: x-large;
+  
+}
+
 #flexcenter {
   display: flex;
   flex-direction: column;
