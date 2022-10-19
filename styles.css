@@ -180,7 +180,9 @@ blockquote {
 
 }
 .maxform {
-  max-width: 98vw;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
 }
 .formbox {
   display: flex;
